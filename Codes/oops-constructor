@@ -1,0 +1,22 @@
+using System;
+class First
+{
+    public string name;
+    public First(string name_space)
+    {
+        name = name_space;
+    }
+    public void Display()
+    {
+        Console.WriteLine("Iam "+name);
+    }
+}
+
+class Second
+{
+    static void Main()
+    {
+        First obj1 = new First("Abhinand Shaji");
+        obj1.Display();
+    }
+}
