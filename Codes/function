@@ -1,0 +1,15 @@
+using System;
+class Program
+{
+    static int add(int a, int b)
+    {
+        return a + b;
+    }
+    static void Main()
+    {
+        Console.WriteLine("Hi its Main function");
+        // Console.WriteLine(add(4,40));
+        int result = add(4,40);
+        Console.WriteLine("The sum is "+result);
+    }
+}
