@@ -1,0 +1,24 @@
+using System;
+class Employee
+{
+    private int id;
+    private string name;
+    
+    public Employee(int id_entered, string name_space)
+    {
+        id = id_entered;
+        name = name_space;
+    }
+    public void Display()
+    {
+        Console.WriteLine("Id - "+id);
+        Console.WriteLine("Name - "+name);
+    }
+    public static void Main(string[] args)
+    {
+        Employee Aaron = new Employee(1,"Aaaron");
+        Employee Babu = new Employee(2,"Babu");
+        Aaron.Display();
+        Babu.Display();
+    }
+}
