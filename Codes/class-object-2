@@ -1,0 +1,23 @@
+using System;
+
+class First
+{
+    public string name;
+    public int age;
+    public void Initial()
+    {
+        Console.WriteLine("Iam "+name+" and iam "+age+" years old.");
+    }
+}
+
+class Second
+{
+    static void Main()
+    {
+        Console.WriteLine("Checking for main-");
+        First astar= new First();
+        astar.name = "Abhinand Shaji";
+        astar.age = 21;
+        astar.Initial();
+    }
+}
