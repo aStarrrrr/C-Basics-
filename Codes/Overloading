@@ -1,0 +1,38 @@
+using System;
+class Program
+{
+    public int Add(int a, int b)
+    {
+        Console.WriteLine("int a, int b");
+        return a+b;
+    }
+    public int Add(int a, int b, int c)
+    {
+        Console.WriteLine("int a, int b, int c");
+        return a+b+c;
+    }
+    public double Add(double a, double b)
+    {
+        Console.WriteLine("double a, double b");
+        return a+b;
+    }
+    public int Add(params int[] arr)
+    {
+        int sum = 0;
+        Console.WriteLine("Array sum");
+        foreach (int num in arr) sum += num;
+        return sum;
+    }
+}
+
+class Dummy
+{
+    static void Main()
+    {
+        Program obj = new Program();
+        Console.WriteLine(obj.Add(4,40));
+        Console.WriteLine(obj.Add(4,40,8));
+        Console.WriteLine(obj.Add(2.3,4.4));
+        Console.WriteLine(obj.Add(1,2,3,4,5));
+    }
+}
