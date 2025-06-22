@@ -1,0 +1,17 @@
+using System;
+class Animal
+{
+    public void Sound()
+    {
+        Console.WriteLine("Makes sounds based on the nature of the animal.");
+    }
+}
+class Cat
+{
+    static void Main()
+    {
+        Console.WriteLine("Meow.");
+        Animal an1 = new Animal();
+        an1.Sound();
+    }
+}
