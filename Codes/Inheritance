@@ -1,0 +1,40 @@
+using System;
+
+class Bowler
+{
+    public void Type()
+    {
+        Console.WriteLine("I can bowl.");
+    }
+    public void Display()
+    {
+        Console.WriteLine("BOWLER");
+    }
+}
+
+class PaceBowler : Bowler
+{
+    public void Swing()
+    {
+        Console.WriteLine("I can bowl swing.");
+    }
+    public void Yorker()
+    {
+        Console.WriteLine("I can bowl yorker.");
+    }
+}
+
+class Dummy
+{
+    static void Main()
+    {
+        Bowler jaddu = new Bowler();
+        PaceBowler boom = new PaceBowler();
+        boom.Swing();
+        boom.Yorker();
+        boom.Type();
+        boom.Display();
+        jaddu.Type();
+        jaddu.Display();
+    }
+}
