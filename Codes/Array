@@ -1,0 +1,13 @@
+using System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arr = {1,3,5,7,2,4,6};
+        for(int i =0; i < arr.Length; i++)
+        {
+            Console.WriteLine(arr[i]);
+        }
+    }
+    
+}
