@@ -1,0 +1,47 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("-- CALCULATOR --");
+        Console.Write("Enter the first operand: ");
+        int op1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the second operand: ");
+        int op2 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the operation ( + , - , * , / ) : ");
+        char oprtr = Convert.ToChar(Console.ReadLine());
+        int result = 0;
+        bool valid = true;
+        switch(oprtr)
+        {
+            case '+':
+            result = op1 + op2;
+            break;
+            case '-':
+            result = op1 - op2;
+            break;
+            case '*':
+            result = op1 * op2;
+            break;
+            case '/':
+            if(op2 == 0)
+                {
+                    Console.WriteLine("Anything divided by zero is not defined.");
+                    valid = false;
+                }
+            else
+                {
+                result = op1 / op2;
+                }
+            break;
+            default:
+            Console.WriteLine("Enter a valid operator");
+            valid = false;
+            break;
+        }
+        if(valid == true)
+        {
+            Console.WriteLine(result);
+        }
+    }
+}
