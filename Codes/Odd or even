@@ -1,0 +1,14 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the number to check its odd or even: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        if (num % 2 == 0){
+            Console.WriteLine("Its even");
+        }else{
+            Console.WriteLine("Its odd");
+        }
+    }
+}
